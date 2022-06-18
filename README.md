@@ -1,4 +1,4 @@
-# dind(個人用)
+# DockerSwarm(クラスタリング)
 
 ## dind
 
@@ -6,7 +6,7 @@
 URL:https://github.com/tetra7774/dind.git
 
 ## Overview
-docker in docker(個人開発用) のcomposeファイル
+docker in docker のcomposeファイル
 
 ## Requirement
 動作確認した環境  
