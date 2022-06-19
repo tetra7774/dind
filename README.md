@@ -1,4 +1,4 @@
-# dind(個人用)
+# DockerSwarm(クラスタリング)
 
 ## dind
 
@@ -6,7 +6,8 @@
 URL:https://github.com/tetra7774/dind.git
 
 ## Overview
-docker in docker(個人開発用) のcomposeファイル
+docker in docker
+→Dockerホストとして動作するコンテナを起動する。今回はdindで起動したコンテナでクラスタリングを行う。
 
 ## Requirement
 動作確認した環境  
@@ -14,7 +15,7 @@ docker in docker(個人開発用) のcomposeファイル
 - Docker 20.10.12
 ## Usage
 ### composeファイルでコンテナ作成
-```docker compose up```
+```docker compose up -d```
 ### managerコンテナの登録
 ```docker container exec -it manager docker swarm init```  
     - コマンド実行時にJOINトークンが発行される。このトークンを利用してコンテナをworkerノードとして登録。
